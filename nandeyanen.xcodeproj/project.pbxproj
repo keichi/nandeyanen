@@ -23,6 +23,7 @@
 		CB076DDE196BBE8C00BA4B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB076DDC196BBE8C00BA4B65 /* InfoPlist.strings */; };
 		CB076DE0196BBE8C00BA4B65 /* nandeyanenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DDF196BBE8C00BA4B65 /* nandeyanenTests.m */; };
 		CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */; };
+		CBAA442A196C3FE500B2087B /* NDYRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTsukkomiViewController.h; sourceTree = "<group>"; };
 		CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYTsukkomiViewController.m; sourceTree = "<group>"; };
 		CB076DEC196BD58000BA4B65 /* linmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
+		CBAA4428196C3FE500B2087B /* NDYRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYRecordViewController.h; sourceTree = "<group>"; };
+		CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYRecordViewController.m; sourceTree = "<group>"; };
 		D7DDDA52B97C4E3AA12534A1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EB5E4D5865F9401FBDFFE722 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +128,8 @@
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
+				CBAA4428196C3FE500B2087B /* NDYRecordViewController.h */,
+				CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */,
 				CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */,
 				CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */,
 				CB076DEC196BD58000BA4B65 /* linmath.h */,
@@ -300,6 +305,7 @@
 			files = (
 				CB076DCB196BBE8C00BA4B65 /* NDYViewController.m in Sources */,
 				CB076DC5196BBE8C00BA4B65 /* NDYAppDelegate.m in Sources */,
+				CBAA442A196C3FE500B2087B /* NDYRecordViewController.m in Sources */,
 				CB076DC1196BBE8C00BA4B65 /* main.m in Sources */,
 				CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */,
 			);
