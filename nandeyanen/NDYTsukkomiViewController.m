@@ -16,7 +16,8 @@
 {
     CMMotionManager *_motionManager;
     NSMutableArray *_accelerationHistory;
-    MovementStatus _movementStatus;;
+    MovementStatus _movementStatus;
+    SocketIO *_socketIO;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -26,6 +27,8 @@
         // Custom initialization
         _accelerationHistory = [NSMutableArray arrayWithCapacity:HISTORY_LENGTH];
         _movementStatus = MSStop;
+        _motionManager = [CMMotionManager new];
+        _socketIO = [[SocketIO alloc] initWithDelegate:self];
     }
     return self;
 }
@@ -34,8 +37,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    _motionManager = [CMMotionManager new];
     
     if (_motionManager.deviceMotionAvailable) {
         _motionManager.deviceMotionUpdateInterval = 1.0 / SAMPLING_FREQ;
@@ -93,6 +94,36 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Socket.IO callbacks
+
+- (void) socketIODidConnect:(SocketIO *)socket
+{
+}
+
+- (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error
+{
+}
+
+- (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
+{
+}
+
+- (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet
+{
+}
+
+- (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
+{
+}
+
+- (void) socketIO:(SocketIO *)socket didSendMessage:(SocketIOPacket *)packet
+{
+}
+
+- (void) socketIO:(SocketIO *)socket onError:(NSError *)error
+{
 }
 
 /*

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
+#import <socket.IO/SocketIO.h>
 
 #import "linmath.h"
 
@@ -19,6 +20,6 @@ typedef enum {
     MSMoving,
 } MovementStatus;
 
-@interface NDYTsukkomiViewController : UIViewController
+@interface NDYTsukkomiViewController : UIViewController<SocketIODelegate>
 
 @end
