@@ -38,6 +38,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [_socketIO connectToHost:@"nandeyanen.keichi.net" onPort:3456];
+    
     if (_motionManager.deviceMotionAvailable) {
         _motionManager.deviceMotionUpdateInterval = 1.0 / SAMPLING_FREQ;
         [_motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
@@ -87,7 +89,7 @@
 
 - (void)doTsukkomi
 {
-    NSLog(@"なんでやねん!");
+    [_socketIO sendEvent:@"tsukkomi" withData:@{@"uid": @123}];
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,30 +102,37 @@
 
 - (void) socketIODidConnect:(SocketIO *)socket
 {
+    NSLog(@"socketIODidConnect");
 }
 
 - (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error
 {
+    NSLog(@"socketIODidDisconnect");
 }
 
 - (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
 {
+    NSLog(@"didReceiveMessage");
 }
 
 - (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet
 {
+    NSLog(@"didReceiveJSON");
 }
 
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
+    NSLog(@"didReceiveEvent");
 }
 
 - (void) socketIO:(SocketIO *)socket didSendMessage:(SocketIOPacket *)packet
 {
+    NSLog(@"didSendMessage");
 }
 
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error
 {
+    NSLog(@"onError");
 }
 
 /*
