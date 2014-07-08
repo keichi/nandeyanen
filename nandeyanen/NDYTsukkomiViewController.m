@@ -126,6 +126,9 @@
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
     NSLog(@"didReceiveEvent");
+    
+    if ([packet.name isEqualToString:@"tsukkomi"]) {
+    }
 }
 
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error

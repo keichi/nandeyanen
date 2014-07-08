@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
 #import <socket.IO/SocketIO.h>
+#import <socket.IO/SocketIOPacket.h>
 
 #import "linmath.h"
 
