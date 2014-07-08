@@ -41,7 +41,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [_socketIO connectToHost:@"nandeyanen.keichi.net" onPort:3456];
+    [_socketIO connectToHost:SOCKET_IO_SERVER onPort:SOCKET_IO_PORT];
     
     if (_motionManager.deviceMotionAvailable) {
         _motionManager.deviceMotionUpdateInterval = 1.0 / SAMPLING_FREQ;
