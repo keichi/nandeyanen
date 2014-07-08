@@ -23,7 +23,18 @@
 		CB076DDE196BBE8C00BA4B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB076DDC196BBE8C00BA4B65 /* InfoPlist.strings */; };
 		CB076DE0196BBE8C00BA4B65 /* nandeyanenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DDF196BBE8C00BA4B65 /* nandeyanenTests.m */; };
 		CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */; };
-		CBAA442A196C3FE500B2087B /* NDYRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */; };
+		CB702E68196C5CA20048DC5D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E67196C5CA20048DC5D /* Parse.framework */; };
+		CB702E6A196C5CB40048DC5D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E69196C5CB40048DC5D /* Accounts.framework */; };
+		CB702E6C196C5CBA0048DC5D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E6B196C5CBA0048DC5D /* AudioToolbox.framework */; };
+		CB702E6E196C5CC00048DC5D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E6D196C5CC00048DC5D /* CFNetwork.framework */; };
+		CB702E70196C5CC70048DC5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E6F196C5CC70048DC5D /* CoreLocation.framework */; };
+		CB702E72196C5CD00048DC5D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E71196C5CD00048DC5D /* libz.dylib */; };
+		CB702E74196C5CD50048DC5D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E73196C5CD50048DC5D /* MobileCoreServices.framework */; };
+		CB702E76196C5CDB0048DC5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E75196C5CDB0048DC5D /* QuartzCore.framework */; };
+		CB702E78196C5CE00048DC5D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E77196C5CE00048DC5D /* Security.framework */; };
+		CB702E7A196C5CE50048DC5D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E79196C5CE50048DC5D /* Social.framework */; };
+		CB702E7C196C5CEC0048DC5D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7B196C5CEC0048DC5D /* StoreKit.framework */; };
+		CB702E7E196C5CF10048DC5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +70,18 @@
 		CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTsukkomiViewController.h; sourceTree = "<group>"; };
 		CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYTsukkomiViewController.m; sourceTree = "<group>"; };
 		CB076DEC196BD58000BA4B65 /* linmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
-		CBAA4428196C3FE500B2087B /* NDYRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYRecordViewController.h; sourceTree = "<group>"; };
-		CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYRecordViewController.m; sourceTree = "<group>"; };
+		CB702E67196C5CA20048DC5D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CB702E69196C5CB40048DC5D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CB702E6B196C5CBA0048DC5D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CB702E6D196C5CC00048DC5D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CB702E6F196C5CC70048DC5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CB702E71196C5CD00048DC5D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CB702E73196C5CD50048DC5D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CB702E75196C5CDB0048DC5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CB702E77196C5CE00048DC5D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CB702E79196C5CE50048DC5D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CB702E7B196C5CEC0048DC5D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D7DDDA52B97C4E3AA12534A1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EB5E4D5865F9401FBDFFE722 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,10 +91,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB702E7E196C5CF10048DC5D /* SystemConfiguration.framework in Frameworks */,
+				CB702E7C196C5CEC0048DC5D /* StoreKit.framework in Frameworks */,
+				CB702E7A196C5CE50048DC5D /* Social.framework in Frameworks */,
+				CB702E78196C5CE00048DC5D /* Security.framework in Frameworks */,
+				CB702E76196C5CDB0048DC5D /* QuartzCore.framework in Frameworks */,
+				CB702E74196C5CD50048DC5D /* MobileCoreServices.framework in Frameworks */,
+				CB702E72196C5CD00048DC5D /* libz.dylib in Frameworks */,
+				CB702E70196C5CC70048DC5D /* CoreLocation.framework in Frameworks */,
+				CB702E6E196C5CC00048DC5D /* CFNetwork.framework in Frameworks */,
+				CB702E6C196C5CBA0048DC5D /* AudioToolbox.framework in Frameworks */,
+				CB702E6A196C5CB40048DC5D /* Accounts.framework in Frameworks */,
 				CB076DB7196BBE8C00BA4B65 /* CoreGraphics.framework in Frameworks */,
 				CB076DB9196BBE8C00BA4B65 /* UIKit.framework in Frameworks */,
 				CB076DB5196BBE8C00BA4B65 /* Foundation.framework in Frameworks */,
 				B0EAACF8433D45BFB226C20F /* libPods.a in Frameworks */,
+				CB702E68196C5CA20048DC5D /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +146,18 @@
 		CB076DB3196BBE8C00BA4B65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */,
+				CB702E7B196C5CEC0048DC5D /* StoreKit.framework */,
+				CB702E79196C5CE50048DC5D /* Social.framework */,
+				CB702E77196C5CE00048DC5D /* Security.framework */,
+				CB702E75196C5CDB0048DC5D /* QuartzCore.framework */,
+				CB702E73196C5CD50048DC5D /* MobileCoreServices.framework */,
+				CB702E71196C5CD00048DC5D /* libz.dylib */,
+				CB702E6F196C5CC70048DC5D /* CoreLocation.framework */,
+				CB702E6D196C5CC00048DC5D /* CFNetwork.framework */,
+				CB702E6B196C5CBA0048DC5D /* AudioToolbox.framework */,
+				CB702E69196C5CB40048DC5D /* Accounts.framework */,
+				CB702E67196C5CA20048DC5D /* Parse.framework */,
 				CB076DB4196BBE8C00BA4B65 /* Foundation.framework */,
 				CB076DB6196BBE8C00BA4B65 /* CoreGraphics.framework */,
 				CB076DB8196BBE8C00BA4B65 /* UIKit.framework */,
@@ -128,8 +173,6 @@
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
-				CBAA4428196C3FE500B2087B /* NDYRecordViewController.h */,
-				CBAA4429196C3FE500B2087B /* NDYRecordViewController.m */,
 				CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */,
 				CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */,
 				CB076DEC196BD58000BA4B65 /* linmath.h */,
@@ -305,7 +348,6 @@
 			files = (
 				CB076DCB196BBE8C00BA4B65 /* NDYViewController.m in Sources */,
 				CB076DC5196BBE8C00BA4B65 /* NDYAppDelegate.m in Sources */,
-				CBAA442A196C3FE500B2087B /* NDYRecordViewController.m in Sources */,
 				CB076DC1196BBE8C00BA4B65 /* main.m in Sources */,
 				CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */,
 			);
@@ -433,9 +475,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nandeyanen/nandeyanen-Prefix.pch";
 				INFOPLIST_FILE = "nandeyanen/nandeyanen-Info.plist";
+				OTHER_LDFLAGS = (
+					"-licucore",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Security,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,9 +500,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "nandeyanen/nandeyanen-Prefix.pch";
 				INFOPLIST_FILE = "nandeyanen/nandeyanen-Info.plist";
+				OTHER_LDFLAGS = (
+					"-licucore",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Security,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
