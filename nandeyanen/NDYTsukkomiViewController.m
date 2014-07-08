@@ -123,24 +123,9 @@
     NSLog(@"socketIODidDisconnect");
 }
 
-- (void) socketIO:(SocketIO *)socket didReceiveMessage:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveMessage");
-}
-
-- (void) socketIO:(SocketIO *)socket didReceiveJSON:(SocketIOPacket *)packet
-{
-    NSLog(@"didReceiveJSON");
-}
-
 - (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
     NSLog(@"didReceiveEvent");
-}
-
-- (void) socketIO:(SocketIO *)socket didSendMessage:(SocketIOPacket *)packet
-{
-    NSLog(@"didSendMessage");
 }
 
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error
