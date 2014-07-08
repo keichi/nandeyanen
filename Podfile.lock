@@ -1,12 +1,21 @@
 PODS:
+  - LRResty (0.11.0):
+    - NSData+Base64 (~> 1.0)
+  - NSData+Base64 (1.0.0)
+  - NXOAuth2Client (1.2.6)
   - socket.IO (0.5.2):
     - SocketRocket (~> 0.2)
   - SocketRocket (0.3.1-beta2)
 
 DEPENDENCIES:
-  - socket.IO
+  - LRResty (~> 0.11.0)
+  - NXOAuth2Client (~> 1.2.6)
+  - socket.IO (~> 0.5.2)
 
 SPEC CHECKSUMS:
+  LRResty: 4e2b2d1e2080406c4bf684e22ed46906d65bd708
+  NSData+Base64: aae92a2e3f0bd88b29fe6093551ded3f5c062548
+  NXOAuth2Client: f9a3efde1cce92c92fd1518070caf305bd363ef4
   socket.IO: db3e71805c862038ab73209dda2b0ad6babc54b2
   SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
 
