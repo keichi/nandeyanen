@@ -37,7 +37,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
     [_socketIO connectToHost:@"nandeyanen.keichi.net" onPort:3456];
     
     if (_motionManager.deviceMotionAvailable) {
@@ -81,10 +84,16 @@
                 _movementStatus = MSStop;
                 [self doTsukkomi];
             }
-         }];
+        }];
     } else {
         NSLog(@"Device motion is not available.");
     }
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [_socketIO disconnect];
+    [_motionManager stopDeviceMotionUpdates];
 }
 
 - (void)doTsukkomi
