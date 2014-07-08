@@ -21,6 +21,7 @@
 		CB076DD6196BBE8C00BA4B65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB076DB8196BBE8C00BA4B65 /* UIKit.framework */; };
 		CB076DDE196BBE8C00BA4B65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB076DDC196BBE8C00BA4B65 /* InfoPlist.strings */; };
 		CB076DE0196BBE8C00BA4B65 /* nandeyanenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DDF196BBE8C00BA4B65 /* nandeyanenTests.m */; };
+		CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		CB076DDB196BBE8C00BA4B65 /* nandeyanenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nandeyanenTests-Info.plist"; sourceTree = "<group>"; };
 		CB076DDD196BBE8C00BA4B65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB076DDF196BBE8C00BA4B65 /* nandeyanenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nandeyanenTests.m; sourceTree = "<group>"; };
+		CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTsukkomiViewController.h; sourceTree = "<group>"; };
+		CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYTsukkomiViewController.m; sourceTree = "<group>"; };
+		CB076DEC196BD58000BA4B65 /* linmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,9 @@
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
+				CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */,
+				CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */,
+				CB076DEC196BD58000BA4B65 /* linmath.h */,
 				CB076DC9196BBE8C00BA4B65 /* NDYViewController.h */,
 				CB076DCA196BBE8C00BA4B65 /* NDYViewController.m */,
 				CB076DCC196BBE8C00BA4B65 /* Images.xcassets */,
@@ -253,6 +260,7 @@
 				CB076DCB196BBE8C00BA4B65 /* NDYViewController.m in Sources */,
 				CB076DC5196BBE8C00BA4B65 /* NDYAppDelegate.m in Sources */,
 				CB076DC1196BBE8C00BA4B65 /* main.m in Sources */,
+				CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
