@@ -92,8 +92,12 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [_socketIO disconnect];
-    [_motionManager stopDeviceMotionUpdates];
+    if (_socketIO.isConnected) {
+        [_socketIO disconnect];
+    }
+    if (_motionManager.isDeviceMotionActive) {
+        [_motionManager stopDeviceMotionUpdates];
+    }
 }
 
 - (void)doTsukkomi
