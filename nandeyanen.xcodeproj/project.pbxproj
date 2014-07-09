@@ -35,6 +35,9 @@
 		CB702E7A196C5CE50048DC5D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E79196C5CE50048DC5D /* Social.framework */; };
 		CB702E7C196C5CEC0048DC5D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7B196C5CEC0048DC5D /* StoreKit.framework */; };
 		CB702E7E196C5CF10048DC5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */; };
+		CB702E81196C62FC0048DC5D /* NDYSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */; };
+		CBC84D54196D153A00C292E4 /* NDYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */; };
+		CBC84D57196D173C00C292E4 /* NDYTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D56196D173C00C292E4 /* NDYTopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,12 @@
 		CB702E79196C5CE50048DC5D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		CB702E7B196C5CEC0048DC5D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB702E7F196C62FC0048DC5D /* NDYSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYSignupViewController.h; sourceTree = "<group>"; };
+		CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYSignupViewController.m; sourceTree = "<group>"; };
+		CBC84D52196D153A00C292E4 /* NDYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYLoginViewController.h; sourceTree = "<group>"; };
+		CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYLoginViewController.m; sourceTree = "<group>"; };
+		CBC84D55196D173C00C292E4 /* NDYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTopViewController.h; sourceTree = "<group>"; };
+		CBC84D56196D173C00C292E4 /* NDYTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYTopViewController.m; sourceTree = "<group>"; };
 		D7DDDA52B97C4E3AA12534A1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EB5E4D5865F9401FBDFFE722 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +182,12 @@
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
+				CBC84D55196D173C00C292E4 /* NDYTopViewController.h */,
+				CBC84D56196D173C00C292E4 /* NDYTopViewController.m */,
+				CBC84D52196D153A00C292E4 /* NDYLoginViewController.h */,
+				CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */,
+				CB702E7F196C62FC0048DC5D /* NDYSignupViewController.h */,
+				CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */,
 				CB076DE9196BC24C00BA4B65 /* NDYTsukkomiViewController.h */,
 				CB076DEA196BC24C00BA4B65 /* NDYTsukkomiViewController.m */,
 				CB076DEC196BD58000BA4B65 /* linmath.h */,
@@ -347,8 +362,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB076DCB196BBE8C00BA4B65 /* NDYViewController.m in Sources */,
+				CB702E81196C62FC0048DC5D /* NDYSignupViewController.m in Sources */,
 				CB076DC5196BBE8C00BA4B65 /* NDYAppDelegate.m in Sources */,
 				CB076DC1196BBE8C00BA4B65 /* main.m in Sources */,
+				CBC84D54196D153A00C292E4 /* NDYLoginViewController.m in Sources */,
+				CBC84D57196D173C00C292E4 /* NDYTopViewController.m in Sources */,
 				CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
