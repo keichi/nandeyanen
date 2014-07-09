@@ -38,6 +38,7 @@
 		CB702E81196C62FC0048DC5D /* NDYSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */; };
 		CBC84D54196D153A00C292E4 /* NDYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */; };
 		CBC84D57196D173C00C292E4 /* NDYTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D56196D173C00C292E4 /* NDYTopViewController.m */; };
+		CBC84D5A196D1BE000C292E4 /* NDYGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D59196D1BE000C292E4 /* NDYGroupsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYLoginViewController.m; sourceTree = "<group>"; };
 		CBC84D55196D173C00C292E4 /* NDYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTopViewController.h; sourceTree = "<group>"; };
 		CBC84D56196D173C00C292E4 /* NDYTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYTopViewController.m; sourceTree = "<group>"; };
+		CBC84D58196D1BE000C292E4 /* NDYGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYGroupsViewController.h; sourceTree = "<group>"; };
+		CBC84D59196D1BE000C292E4 /* NDYGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYGroupsViewController.m; sourceTree = "<group>"; };
 		D7DDDA52B97C4E3AA12534A1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		EB5E4D5865F9401FBDFFE722 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +185,8 @@
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
+				CBC84D58196D1BE000C292E4 /* NDYGroupsViewController.h */,
+				CBC84D59196D1BE000C292E4 /* NDYGroupsViewController.m */,
 				CBC84D55196D173C00C292E4 /* NDYTopViewController.h */,
 				CBC84D56196D173C00C292E4 /* NDYTopViewController.m */,
 				CBC84D52196D153A00C292E4 /* NDYLoginViewController.h */,
@@ -367,6 +372,7 @@
 				CB076DC1196BBE8C00BA4B65 /* main.m in Sources */,
 				CBC84D54196D153A00C292E4 /* NDYLoginViewController.m in Sources */,
 				CBC84D57196D173C00C292E4 /* NDYTopViewController.m in Sources */,
+				CBC84D5A196D1BE000C292E4 /* NDYGroupsViewController.m in Sources */,
 				CB076DEB196BC24C00BA4B65 /* NDYTsukkomiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +512,7 @@
 					CFNetwork,
 					"-framework",
 					Security,
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -531,6 +538,7 @@
 					CFNetwork,
 					"-framework",
 					Security,
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
