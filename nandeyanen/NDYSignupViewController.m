@@ -16,6 +16,7 @@
 {
     AVAudioRecorder *_audioRecorder;
     NSString *_voicePath;
+    BOOL _isRecording;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -39,6 +40,8 @@
         if(error){
             NSLog(@"Error initializing AVAudioRecorder: %@", error);
         }
+        
+        _isRecording = NO;
 
     }
     return self;
@@ -120,17 +123,15 @@
     }];
 }
 - (IBAction)recordButtonTapped:(id)sender {
-    _recordButton.enabled = NO;
-    _stopButton.enabled = YES;
-    
-    [_audioRecorder record];
-}
-
-- (IBAction)stopButtonTapped:(id)sender {
-    _recordButton.enabled = YES;
-    _stopButton.enabled = NO;
-    
-    [_audioRecorder stop];
+    if (_isRecording) {
+        _isRecording = NO;
+        [_audioRecorder stop];
+        [_recordButton setTitle:@"録音" forState:UIControlStateNormal];
+    } else {
+        _isRecording = YES;
+        [_audioRecorder record];
+        [_recordButton setTitle:@"停止" forState:UIControlStateNormal];
+    }
 }
 
 /*
