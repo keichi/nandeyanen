@@ -36,6 +36,7 @@
 		CB702E7C196C5CEC0048DC5D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7B196C5CEC0048DC5D /* StoreKit.framework */; };
 		CB702E7E196C5CF10048DC5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */; };
 		CB702E81196C62FC0048DC5D /* NDYSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */; };
+		CB717AE5196D81D0002E0592 /* te.png in Resources */ = {isa = PBXBuildFile; fileRef = CB717AE4196D81D0002E0592 /* te.png */; };
 		CBC84D54196D153A00C292E4 /* NDYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */; };
 		CBC84D57196D173C00C292E4 /* NDYTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D56196D173C00C292E4 /* NDYTopViewController.m */; };
 		CBC84D5A196D1BE000C292E4 /* NDYGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC84D59196D1BE000C292E4 /* NDYGroupsViewController.m */; };
@@ -88,6 +89,7 @@
 		CB702E7D196C5CF10048DC5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB702E7F196C62FC0048DC5D /* NDYSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYSignupViewController.h; sourceTree = "<group>"; };
 		CB702E80196C62FC0048DC5D /* NDYSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYSignupViewController.m; sourceTree = "<group>"; };
+		CB717AE4196D81D0002E0592 /* te.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = te.png; sourceTree = "<group>"; };
 		CBC84D52196D153A00C292E4 /* NDYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYLoginViewController.h; sourceTree = "<group>"; };
 		CBC84D53196D153A00C292E4 /* NDYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDYLoginViewController.m; sourceTree = "<group>"; };
 		CBC84D55196D173C00C292E4 /* NDYTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDYTopViewController.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		CB076DBA196BBE8C00BA4B65 /* nandeyanen */ = {
 			isa = PBXGroup;
 			children = (
+				CB717AE4196D81D0002E0592 /* te.png */,
 				CB076DC3196BBE8C00BA4B65 /* NDYAppDelegate.h */,
 				CB076DC4196BBE8C00BA4B65 /* NDYAppDelegate.m */,
 				CB076DC6196BBE8C00BA4B65 /* Main.storyboard */,
@@ -314,6 +317,7 @@
 			files = (
 				CB076DCD196BBE8C00BA4B65 /* Images.xcassets in Resources */,
 				CB076DBF196BBE8C00BA4B65 /* InfoPlist.strings in Resources */,
+				CB717AE5196D81D0002E0592 /* te.png in Resources */,
 				CB076DC8196BBE8C00BA4B65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
