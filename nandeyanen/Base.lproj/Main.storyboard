@@ -45,50 +45,44 @@
                     <connections>
                         <outlet property="passwordField" destination="ayV-Dh-c2n" id="f6V-Vu-0HH"/>
                         <outlet property="usernameField" destination="y1e-VA-M9p" id="eCr-Bx-c4O"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="login" modalTransitionStyle="flipHorizontal" id="HS2-4R-yRb"/>
+                        <segue destination="pcT-3K-xaR" kind="modal" identifier="login" id="nfI-KW-e3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-bF-iPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-180" y="761"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Groups View Controller-->
+        <scene sceneID="6aQ-W0-TnH">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="NDYViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="pcT-3K-xaR" customClass="NDYGroupsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JSr-gk-6O5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="なんでやねん" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lw-go-IWy">
-                                <rect key="frame" x="57" y="166" width="206" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-Mq-DOe">
-                                <rect key="frame" x="129" y="334" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="開始">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TIc-6Z-ub9" kind="modal" id="D1D-2N-RTO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Xut-os-yHd"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eMo-48-w43">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMo-48-w43" id="FF7-Mj-5IT">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pcT-3K-xaR" id="3Qp-Wa-LPC"/>
+                            <outlet property="delegate" destination="pcT-3K-xaR" id="pRK-x4-Wdt"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="TIc-6Z-ub9" kind="modal" identifier="start" id="nOt-Ad-vnQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aC-Y4-5VD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XEN-Xi-nK3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="467" y="8"/>
+            <point key="canvasLocation" x="481" y="8"/>
         </scene>
         <!--Tsukkomi View Controller-->
         <scene sceneID="6hI-hY-Gsu">
@@ -109,6 +103,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFu-tc-X4i">
+                                <rect key="frame" x="254" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="終了">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="TIc-6Z-ub9" eventType="touchUpInside" id="4H9-9Q-LQl"/>
+                                    <segue destination="XEN-Xi-nK3" kind="unwind" unwindAction="returnActionForSegue:" id="luZ-QK-Oqw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -131,7 +136,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpf-wS-wou">
-                                <rect key="frame" x="145" y="316" width="30" height="30"/>
+                                <rect key="frame" x="115" y="317" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-OG-hZc">
-                                <rect key="frame" x="137" y="368" width="59" height="30"/>
+                                <rect key="frame" x="115" y="368" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ログイン">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,7 +166,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="autologin" modalTransitionStyle="flipHorizontal" id="MHA-5o-a6m"/>
+                        <outlet property="loginButton" destination="fcT-OG-hZc" id="wJB-17-jZR"/>
+                        <outlet property="signupButton" destination="hpf-wS-wou" id="weg-Pu-Bt4"/>
+                        <segue destination="pcT-3K-xaR" kind="modal" identifier="autologin" id="Dpb-h1-k4W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFA-Fi-C2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,7 +254,7 @@
                         <outlet property="recordButton" destination="TNj-4b-SXn" id="G5V-Da-eej"/>
                         <outlet property="stopButton" destination="chd-I4-3hs" id="DDG-Dh-hL5"/>
                         <outlet property="usernameField" destination="Hek-am-JRt" id="mLn-ve-OEk"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="signup" modalTransitionStyle="flipHorizontal" id="js0-R4-fHg"/>
+                        <segue destination="pcT-3K-xaR" kind="modal" identifier="signup" id="RSJ-CG-Cpr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGW-Ob-FU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,6 +268,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MHA-5o-a6m"/>
+        <segue reference="Dpb-h1-k4W"/>
     </inferredMetricsTieBreakers>
 </document>
