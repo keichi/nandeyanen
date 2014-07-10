@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller - ログイン-->
+        <!--Login View Controller-->
         <scene sceneID="et8-1F-tpK">
             <objects>
-                <viewController title="ログイン" id="I0a-ox-sXT" customClass="NDYLoginViewController" sceneMemberID="viewController">
+                <viewController id="I0a-ox-sXT" customClass="NDYLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qKS-Ep-LK0"/>
                         <viewControllerLayoutGuide type="bottom" id="q96-X9-sW0"/>
@@ -28,17 +28,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRH-3l-Gx6">
-                                <rect key="frame" x="132" y="306" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ログイン">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonTapped:" destination="I0a-ox-sXT" eventType="touchUpInside" id="aN1-fT-MeT"/>
-                                    <action selector="registerButtonTapped:" destination="nBb-Uu-vln" eventType="touchUpInside" id="6EO-R1-WZs"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -74,7 +63,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="TIc-6Z-ub9" kind="modal" identifier="start" id="bmp-yO-A7i"/>
+                                    <segue destination="TIc-6Z-ub9" kind="modal" identifier="start" modalTransitionStyle="flipHorizontal" id="bmp-yO-A7i"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -175,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="-422" y="8"/>
         </scene>
-        <!--Signup View Controller - 登録-->
+        <!--Signup View Controller-->
         <scene sceneID="aZC-9j-PnC">
             <objects>
-                <viewController title="登録" id="nBb-Uu-vln" customClass="NDYSignupViewController" sceneMemberID="viewController">
+                <viewController id="nBb-Uu-vln" customClass="NDYSignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oDZ-D5-Wfe"/>
                         <viewControllerLayoutGuide type="bottom" id="wMq-QQ-WxS"/>
@@ -211,16 +200,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-a4-wyA">
-                                <rect key="frame" x="119" y="309" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="登録">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerButtonTapped:" destination="nBb-Uu-vln" eventType="touchUpInside" id="5XB-LV-UtS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNj-4b-SXn">
                                 <rect key="frame" x="132" y="250" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

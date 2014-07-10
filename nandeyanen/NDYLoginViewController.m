@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIBarButtonItem *loginButton = [[UIBarButtonItem alloc] initWithTitle:@"ログイン" style:UIBarButtonItemStylePlain target:self action:@selector(loginButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = loginButton;
 }
 
 - (void)didReceiveMemoryWarning

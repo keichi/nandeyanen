@@ -51,6 +51,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIBarButtonItem *signupButton = [[UIBarButtonItem alloc] initWithTitle:@"登録" style:UIBarButtonItemStylePlain target:self action:@selector(registerButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = signupButton;
 }
 
 - (void)didReceiveMemoryWarning
