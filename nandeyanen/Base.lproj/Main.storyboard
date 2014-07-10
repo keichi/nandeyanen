@@ -68,6 +68,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TIc-6Z-ub9" kind="modal" identifier="start" id="bmp-yO-A7i"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -75,9 +78,6 @@
                             <outlet property="delegate" destination="pcT-3K-xaR" id="pRK-x4-Wdt"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="TIc-6Z-ub9" kind="modal" identifier="start" id="nOt-Ad-vnQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aC-Y4-5VD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XEN-Xi-nK3" userLabel="Exit" sceneMemberID="exit"/>
