@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.hidesBackButton = YES;
+    
+    UIBarButtonItem* addButton = [[UIBarButtonItem alloc]
+                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                  target:self action:@selector(addButtonTapped:)];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +52,9 @@
         self.objectsPerPage = 25;
     }
     return self;
+}
+
+- (void)addButtonTapped:(id)sender {
 }
 
 - (PFQuery *)queryForTable {

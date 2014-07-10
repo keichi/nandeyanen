@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login View Controller - ログイン-->
         <scene sceneID="et8-1F-tpK">
             <objects>
-                <viewController id="I0a-ox-sXT" customClass="NDYLoginViewController" sceneMemberID="viewController">
+                <viewController title="ログイン" id="I0a-ox-sXT" customClass="NDYLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qKS-Ep-LK0"/>
                         <viewControllerLayoutGuide type="bottom" id="q96-X9-sW0"/>
@@ -45,24 +45,29 @@
                     <connections>
                         <outlet property="passwordField" destination="ayV-Dh-c2n" id="f6V-Vu-0HH"/>
                         <outlet property="usernameField" destination="y1e-VA-M9p" id="eCr-Bx-c4O"/>
-                        <segue destination="pcT-3K-xaR" kind="modal" identifier="login" id="nfI-KW-e3C"/>
+                        <segue destination="pcT-3K-xaR" kind="push" identifier="login" id="nfI-KW-e3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFP-bF-iPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="649"/>
         </scene>
-        <!--Groups View Controller-->
+        <!--Groups View Controller - グループ一覧-->
         <scene sceneID="6aQ-W0-TnH">
             <objects>
-                <tableViewController id="pcT-3K-xaR" customClass="NDYGroupsViewController" sceneMemberID="viewController">
+                <tableViewController title="グループ一覧" id="pcT-3K-xaR" customClass="NDYGroupsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JSr-gk-6O5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="グループを検索" id="rVf-W9-A32">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eMo-48-w43">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMo-48-w43" id="FF7-Mj-5IT">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -163,17 +168,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="csD-79-mUV"/>
                     <connections>
-                        <segue destination="pcT-3K-xaR" kind="modal" identifier="autologin" id="Dpb-h1-k4W"/>
+                        <segue destination="pcT-3K-xaR" kind="push" identifier="autologin" id="Dpb-h1-k4W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFA-Fi-C2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-422" y="8"/>
         </scene>
-        <!--Signup View Controller-->
+        <!--Signup View Controller - 登録-->
         <scene sceneID="aZC-9j-PnC">
             <objects>
-                <viewController id="nBb-Uu-vln" customClass="NDYSignupViewController" sceneMemberID="viewController">
+                <viewController title="登録" id="nBb-Uu-vln" customClass="NDYSignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oDZ-D5-Wfe"/>
                         <viewControllerLayoutGuide type="bottom" id="wMq-QQ-WxS"/>
@@ -235,7 +240,7 @@
                         <outlet property="rePasswordField" destination="dkk-fG-ngH" id="5Ot-t3-o6H"/>
                         <outlet property="recordButton" destination="TNj-4b-SXn" id="G5V-Da-eej"/>
                         <outlet property="usernameField" destination="Hek-am-JRt" id="mLn-ve-OEk"/>
-                        <segue destination="pcT-3K-xaR" kind="modal" identifier="signup" id="RSJ-CG-Cpr"/>
+                        <segue destination="pcT-3K-xaR" kind="push" identifier="signup" id="RSJ-CG-Cpr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGW-Ob-FU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
