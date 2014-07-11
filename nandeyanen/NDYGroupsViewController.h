@@ -7,6 +7,7 @@
 //
 
 #import <Parse/Parse.h>
+#import "NDYTsukkomiViewController.h"
 
 @interface NDYGroupsViewController : PFQueryTableViewController
 

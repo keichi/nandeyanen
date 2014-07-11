@@ -26,4 +26,6 @@ typedef enum {
 
 @interface NDYTsukkomiViewController : UIViewController<SocketIODelegate>
 
+@property (weak, nonatomic) NSString *groupId;
+
 @end

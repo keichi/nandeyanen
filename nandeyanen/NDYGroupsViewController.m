@@ -58,7 +58,7 @@
 }
 
 - (PFQuery *)queryForTable {
-    PFQuery *query = [PFUser query];
+    PFQuery *query = [PFQuery queryWithClassName:@"Group"];
     
     // If no objects are loaded in memory, we look to the cache
     // first to fill the table and then subsequently do a query
@@ -79,36 +79,36 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
                                       reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell to show todo item with a priority at the bottom
-    cell.textLabel.text = [object objectForKey:@"text"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"username: %@",
-                                 [object objectForKey:@"username"]];
+    cell.textLabel.text = [object objectForKey:@"name"];
+    PFRelation *relation = [object relationForKey:@"users"];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d人", [[relation query] countObjects]];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"start" sender:self];
+    PFObject *object = [self.objects objectAtIndex:indexPath.row];
+    NSString *groupId = object.objectId;
+    
+    [self performSegueWithIdentifier:@"start" sender:groupId];
 }
 
-- (IBAction)returnActionForSegue:(UIStoryboardSegue*)segue
-{
-}
-
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"start"]) {
+        NDYTsukkomiViewController *vc = [segue destinationViewController];
+        vc.groupId = sender;
+    }
 }
-*/
+
 
 @end
