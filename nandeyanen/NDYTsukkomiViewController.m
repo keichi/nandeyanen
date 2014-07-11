@@ -116,6 +116,8 @@
 - (void) socketIODidConnect:(SocketIO *)socket
 {
     NSLog(@"socketIODidConnect");
+    
+    [_socketIO sendEvent:@"joinGroup" withData:@{@"groupId": self.groupId}];
 }
 
 - (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error
