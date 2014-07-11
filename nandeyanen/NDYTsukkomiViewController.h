@@ -10,6 +10,8 @@
 #import <CoreMotion/CoreMotion.h>
 #import <socket.IO/SocketIO.h>
 #import <socket.IO/SocketIOPacket.h>
+#import <Parse/Parse.h>
+#import <AVFoundation/AVFoundation.h>
 
 #import "linmath.h"
 
@@ -24,7 +26,7 @@ typedef enum {
     MSMoving,
 } MovementStatus;
 
-@interface NDYTsukkomiViewController : UIViewController<SocketIODelegate>
+@interface NDYTsukkomiViewController : UIViewController<SocketIODelegate, AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) NSString *groupId;
 

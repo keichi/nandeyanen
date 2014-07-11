@@ -18,6 +18,7 @@
     NSMutableArray *_accelerationHistory;
     MovementStatus _movementStatus;
     SocketIO *_socketIO;
+    AVAudioPlayer *_audioPlayer;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -102,7 +103,7 @@
 
 - (void)doTsukkomi
 {
-    [_socketIO sendEvent:@"tsukkomi" withData:@{@"uid": @123}];
+    [_socketIO sendEvent:@"tsukkomi" withData:@{@"username": [PFUser currentUser].username}];
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,7 +118,7 @@
 {
     NSLog(@"socketIODidConnect");
     
-    [_socketIO sendEvent:@"joinGroup" withData:@{@"groupId": self.groupId}];
+    [_socketIO sendEvent:@"joinGroup" withData:@{@"username": [PFUser currentUser].username, @"groupId": self.groupId}];
 }
 
 - (void) socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error
@@ -130,12 +131,33 @@
     NSLog(@"didReceiveEvent");
     
     if ([packet.name isEqualToString:@"tsukkomi"]) {
+        if (_audioPlayer) {
+            return;
+        }
+        
+        PFQuery *query = [PFUser query];
+        NSString *username = [[packet.args objectAtIndex:0] objectForKey:@"username"];
+        [query whereKey:@"username" equalTo:username];
+        
+        [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            PFFile *file = [object objectForKey:@"voice"];
+            [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                _audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+                _audioPlayer.delegate = self;
+                [_audioPlayer play];
+            }];
+        }];
     }
 }
 
 - (void) socketIO:(SocketIO *)socket onError:(NSError *)error
 {
     NSLog(@"onError");
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    _audioPlayer = nil;
 }
 
 - (IBAction)exitButtonTapped:(id)sender {
